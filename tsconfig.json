@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "outDir": "dist",
+    "rootDir": "src",
+    "strict": true,
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "lib": ["ESNext", "DOM"],
+    "types": ["node"],
+    "declaration": true,
+  },
+  "include": ["next-env.d.ts", "src/**/*.ts", "src/**/*.d.ts"],
+  "exclude": ["node_modules"]
+}

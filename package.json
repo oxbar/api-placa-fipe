@@ -1,0 +1,37 @@
+{
+  "name": "api-placa-fipe",
+  "version": "1.0.0",
+  "description": "Esta biblioteca é um simples wrapper para buscar dados de veículos a partir da placa, para isso é utilizado os dados fornecidos do site tabelafipebrasil.com",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oxbar/api-placa-fipe.git"
+  },
+  "keywords": [
+    "api-placa",
+    "fipe",
+    "placa",
+    "carro",
+    "veiculo",
+    "automovel"
+  ],
+  "author": "oxbar",
+  "bugs": {
+    "url": "https://github.com/oxbar/api-placa-fipe/issues"
+  },
+  "homepage": "https://github.com/oxbar/api-placa-fipe#readme",
+  "dependencies": {
+    "puppeteer": "^21.4.1",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-adblocker": "^2.13.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  },
+  "types": "index.d.ts"
+}
