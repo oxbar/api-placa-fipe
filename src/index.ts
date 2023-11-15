@@ -94,11 +94,15 @@ export async function consultarPlaca(placa: string) {
             if (titulo === "tipoVeiculo" && conteudo === "CAMIONETA") {
               conteudo = "CAMINHONETE";
             } else if (titulo === "tipoVeiculo" && conteudo === "MOTONETA") {
-              conteudo = "MOTOCICLETA"
+              conteudo = "MOTOCICLETA";
             }
 
             if (titulo === "marca" && conteudo === "CHEV") {
               conteudo = "CHEVROLET";
+            } else if (titulo === "marca" && conteudo === "KIA MOTORS") {
+              conteudo = "KIA";
+            } else if (titulo === "marca" && conteudo === "CHERY") {
+              conteudo = "CAOACHERY";
             }
 
             if (titulo === "cidade" && conteudo === "ITAPORANGA DE AJUDA") {

@@ -1,6 +1,6 @@
 {
   "name": "api-placa-fipe",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Esta biblioteca é um simples wrapper para buscar dados de veículos a partir da placa, para isso é utilizado os dados fornecidos do site tabelafipebrasil.com",
   "main": "dist/index.js",
   "license": "MIT",
