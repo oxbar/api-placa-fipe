@@ -91,18 +91,38 @@ export async function consultarPlaca(placa: string) {
               conteudo = null;
             }
 
-            if (titulo === "tipoVeiculo" && conteudo === "CAMIONETA") {
-              conteudo = "CAMINHONETE";
-            } else if (titulo === "tipoVeiculo" && conteudo === "MOTONETA") {
-              conteudo = "MOTOCICLETA";
+            if (titulo === "tipoVeiculo") {
+              if (conteudo === "CAMINHAO") {
+                conteudo = "CAMINHONETE";
+              } else if (conteudo === "CAMIONETA") {
+                conteudo = "UTILITARIO";
+              } else if (conteudo === "MOTONETA" || conteudo === "CICLOMOTOR") {
+                conteudo = "MOTOCICLETA";
+              }
             }
 
-            if (titulo === "marca" && conteudo === "CHEV") {
-              conteudo = "CHEVROLET";
-            } else if (titulo === "marca" && conteudo === "KIA MOTORS") {
-              conteudo = "KIA";
-            } else if (titulo === "marca" && conteudo === "CHERY") {
-              conteudo = "CAOACHERY";
+            if (titulo === "marca") {
+              if (conteudo === "CHEV" || conteudo === "GM") {
+                conteudo = "CHEVROLET";
+              } else if (conteudo === "VW") {
+                conteudo = "VOLKSWAGEN";
+              } else if (conteudo === "MMC") {
+                conteudo = "MITSUBISHI";
+              } else if (conteudo === "LR") {
+                conteudo = "LAND ROVER";
+              } else if (conteudo === "CHERY") {
+                conteudo = "CAOACHERY";
+              } else if (
+                conteudo === "M.BENZ" ||
+                conteudo === "M.BENZ313SF" ||
+                conteudo === "MERCEDES-BENZ"
+              ) {
+                conteudo = "MERCEDES";
+              } else if (conteudo === "JTA" || conteudo === "JTA-SUZUKI") {
+                conteudo = "SUZUKI";
+              } else if (conteudo === "JAG") {
+                conteudo = "JAGUAR";
+              }
             }
 
             if (titulo === "cidade" && conteudo === "ITAPORANGA DE AJUDA") {

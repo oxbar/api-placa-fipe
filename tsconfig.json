@@ -12,7 +12,7 @@
     "allowSyntheticDefaultImports": true,
     "lib": ["ESNext", "DOM"],
     "types": ["node"],
-    "declaration": true,
+    "declaration": true
   },
   "include": ["next-env.d.ts", "src/**/*.ts", "src/**/*.d.ts"],
   "exclude": ["node_modules"]
